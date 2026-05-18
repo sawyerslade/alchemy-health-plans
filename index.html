@@ -21,7 +21,7 @@
 body { background: var(--white); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
 nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 40px; background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.nav-logo img { height: 60px; object-fit: contain; }
+.nav-logo img { height: 56px; object-fit: contain; }
 .nav-logo-text { font-size: 20px; font-weight: 700; color: var(--blue); }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
@@ -103,14 +103,11 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .booking-section { background: var(--off-white); padding: 72px 40px; border-bottom: 1px solid var(--border); }
 .booking-wrap { max-width: 720px; margin: 0 auto; }
 .booking-intro { text-align: center; margin-bottom: 36px; }
-.widget-container { background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; min-height: 600px; }
-.widget-container iframe { width: 100%; min-height: 600px; border: none; display: block; }
 .team-section { padding: 72px 40px; border-bottom: 1px solid var(--border); }
 .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
 .team-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
 .team-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
 .team-photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin: 0 auto 12px; display: block; border: 2px solid var(--border); }
-.team-placeholder { width: 72px; height: 72px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 22px; font-weight: 700; color: #fff; }
 .team-name { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
 .team-role { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
 .team-npn { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
@@ -370,8 +367,9 @@ footer { background: var(--blue); padding: 48px 40px 24px; }
       <div class="section-title">Book your free consultation</div>
       <p style="font-size:15px;color:var(--muted);line-height:1.7;">Choose a time that works for you. One of our licensed advocates will walk you through your options — no pressure, no cost.</p>
     </div>
-    <div class="widget-container">
-      <iframe src="https://api.leadconnectorhq.com/widget/booking/wW1ycDox2MLppedMoVsp" title="Book a free consultation with Alchemy Health Plans"></iframe>
+    <div style="text-align:center;padding:48px 32px;background:var(--white);border:1px solid var(--border);border-radius:12px;">
+      <p style="font-size:16px;color:var(--muted);margin-bottom:28px;line-height:1.7;">Click below to open our scheduling calendar and pick a time that works for you. Free, no obligation.</p>
+      <a href="https://api.leadconnectorhq.com/widget/booking/wW1ycDox2MLppedMoVsp" target="_blank" class="btn-gold" style="font-size:16px;padding:16px 40px;">Open Booking Calendar</a>
     </div>
   </div>
 </div>
